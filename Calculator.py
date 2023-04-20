@@ -5,7 +5,7 @@ import math
 button_style = "border-radius: 50%; height: 50px; width: 50px; font-size: 20px;"
 
 # Title of the app
-st.title("Simple Calculator by Huu An")
+st.title("Simple Calculator")
 
 # User input for two numbers and operation
 num1 = st.number_input("Enter the first number", value=0)

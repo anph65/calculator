@@ -2,20 +2,20 @@ import streamlit as st
 import math
 
 # Define the style for the circular buttons
-button_style = "border-radius: 50%; height: 50px; width: 50px; font-size: 20px;"
+button_style = "border-radius: 50%; height: 50px; width: 50px; font-size: 20px; text-align: center; line-height: 1.9;"
 
 # Title of the app
-st.title("Simple Calculator by Huu An")
+st.title("Simple Calculator")
 
 # User input for two numbers and operation
 num1 = st.number_input("Enter the first number", value=0)
 num2 = st.number_input("Enter the second number", value=0)
 
 # Define the buttons
-add_button = st.button(label="+", key="add", style=button_style)
-subtract_button = st.button(label="-", key="subtract", style=button_style)
-multiply_button = st.button(label="x", key="multiply", style=button_style)
-divide_button = st.button(label="÷", key="divide", style=button_style)
+add_button = st.markdown("<button style='" + button_style + "'>&plus;</button>", unsafe_allow_html=True)
+subtract_button = st.markdown("<button style='" + button_style + "'>&minus;</button>", unsafe_allow_html=True)
+multiply_button = st.markdown("<button style='" + button_style + "'>&times;</button>", unsafe_allow_html=True)
+divide_button = st.markdown("<button style='" + button_style + "'>&divide;</button>", unsafe_allow_html=True)
 
 # Perform the selected operation
 if add_button:

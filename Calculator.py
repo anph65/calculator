@@ -12,7 +12,7 @@ def calculator():
     result = ""
 
     # Create calculator display
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
     with col1:
         st.write("## Calculator")
         st.write("Enter a number and select an operation")
@@ -22,7 +22,7 @@ def calculator():
         st.write(result)
 
     # Create operation buttons
-    col1, col2, col3, col4 = st.beta_columns(4)
+    col1, col2, col3, col4 = st.columns(4)
     with col1:
         if st.button("+"):
             operation = "+"
@@ -51,7 +51,7 @@ def calculator():
             result = "Error: Division by zero"
 
     # Update result display
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
     with col2:
         st.write(result)
 
